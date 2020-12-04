@@ -16,21 +16,25 @@
     <nav>
 
     </nav>
-    <div class="container-fluid bg-main">
-        <div class="row">git
+    <div class="container-fluid border">
+        <div class="row border">
             <div class="container">
                 <div class="row">
 
-
-                    <div class="col d-none col-md-2 d-md-block col-lg-2"> Aside1
+                    <div class="col d-none col-md-2 d-md-block col-lg-2 border"> Aside1 -2
+                        <div class="container">
+                            <div class="row">
+                                <div class="col"></div>
+                            </div>
+                        </div>
                     </div>
 
-
-                    <div class="col-12 col-md-10 col-lg-6">
-
+                    <!-- cambio de col -->
+                    <div class="col-12 col-md-10 col-lg-6 border">Main -6
+                        <!-- Main-->
                         <main class="justify-content-center">
 
-
+                            <!-- Nav-->
                             <ul class="nav nav-pills justify-content-end">
 
                                 <p class="h3 text-left">Post </>
@@ -55,60 +59,149 @@
                                     </li>
 
                             </ul>
-                            <article class="links-articles color2">
-                                <img class="img-fluid" src="imagenes/img_article1.svg" alt="">
-                                <div>
-                                    <img src="imagenes/avatar.jpg" alt="avatar" class="avatar">
-                                    <p class="h3">Muhimen <small class="text-muted">Dec 3 (7 hours)</small> </p>
 
-                                    <a href="#">
-                                        <h1>How To Write Comments</h1>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <h1>#Web dev</h1>
-                                    </a>
-                                    <a href="#">
-                                        <h1>#git</h1>
-                                    </a> <a href="#">
-                                        <h1>#saludos</h1>
-                                    </a>
+                            <!-- Post-->
+
+
+                            <div class="card mb-3 d-flex-row">
+
+                                <img class="card-img-top" src=" imagenes/img_article1.svg" alt="Card image cap">
+
+                                <div class="d-flex align-items-center  mt-1">
+
+                                    <img src="imagenes/avatar.jpg" alt="avatar" class="avatar m-3">
+
+                                    <div class="size-p-avatar">
+                                        <p class="font-weight-light"> Muhimen <small class="text-muted">Dec 3 (7
+                                                hours)</small></p>
+                                    </div>
                                 </div>
 
-                                <div>
+                                <div class="card-body main-body-card">
+
+
                                     <a href="#">
-                                        <img src="imagenes/SVG/heart.svg" alt="" class="heart-icon">
+                                        <p class="card-text font-weight-bold h2">How To Write Comments</p>
                                     </a>
+                                    <div class="d-flex font-size-hash">
+                                        <a href="#">
+                                            <h1 class="font-size-hash">#webdev</h1>
+                                        </a>
+                                        <a href="#">
+                                            <h1 class="font-size-hash">#git</h1>
+                                        </a>
+                                        <a href="#">
+                                            <h1 class="font-size-hash">#saludos</h1>
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+
+                                        <div class="images-size-articles">
+                                            <a href="#">
+                                                <img src="imagenes/SVG/heart.svg" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="imagenes/SVG/talk.svg" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="d-flex">
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small>
+                                            </p>
+                                            <button type="button"
+                                                class="btn btn-secondary d-flex flex-row-reverse bd-highlight">Save</button>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="imagenes/SVG/talk.svg" alt="" class="talk-icon">
-                                    </a>
-
-                                    <button type="button" class="btn btn-secondary">Save</button>
-                                </div>
-                            </article>
 
 
-                            <article>1</article>
-                            <article>1</article>
-                            <article>1</article>
-                            <article>1</article>
-                            <article>1</article>
-                            <article>1</article>
-                            <article>1</article>
 
                         </main>
 
                     </div>
 
-
-                    <div class="col d-none col-lg-2 d-lg-block">Aside2
+                    <!-- ASIDE-2 -->
+                    <div class="col d-none col-lg-4 d-lg-block">
                         <div class="container">
                             <div class="row">
-                                <div class="col"></div>
+
+                                <!-- PODCAST -->
+                                <div class="col-12 mb-2">
+                                    <div class="card mb-12" style="max-width: 540px;">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img src="imagenes/devDiscuss.jpg" class="card-img"
+                                                    alt="devDiscuss Podcast">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Listen to the DevDiscuss Podcast</h6>
+                                                    <p class="card-text custom-card-text">"Analogies & Visualizations w/
+                                                        Lydia Hallie & Kevin Kononenko"<br><a href=""> → tune in!</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- LISTINGS -->
+                                <div class="col-12 mt-2 mb-2">
+                                    <div class="list-group">
+                                        <a href="#"
+                                            class="list-group-item list-group-item-action custom-title disabled">
+                                            Listings
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">🤖 Cyber Monday 50%
+                                            Off Bootstrap Themes, Admin Templates, and UI Kits
+                                            <h6 class="small">forsale</h6></a>
+                                        <a href="#" class="list-group-item list-group-item-action">🚨 Book Giveaway:
+                                            Modern front-end architecture
+                                            <h6 class="small">education</h6></a>
+                                        <a href="#" class="list-group-item list-group-item-action">⚛️ Build your React
+                                            app 10x faster
+                                            <h6 class="small">forsale</h6></a>
+                                        <a href="#" class="list-group-item list-group-item-action">WebSocket Deep Dive &
+                                            Code Review, Livestream Event
+                                            <h6 class="small">events</h6></a>
+                                        <a href="#" class="list-group-item list-group-item-action">💸 BudgetSheet -
+                                            Import Live Bank Transactions Into Google Sheets - 30% off <h6
+                                                class="small">products</h6></a>
+                                    </div>
+                                </div>
+
+                                <!-- NEWS -->
+                                <div class="col-12 mt-2 mb-2">
+                                    <div class="list-group">
+                                        <a href="#"
+                                            class="list-group-item list-group-item-action custom-title disabled">
+                                            #news
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">Learn from Data
+                                            Breach<h6 class="small">1 comment</h6></a>
+                                        <a href="#" class="list-group-item list-group-item-action">Deploy your own short
+                                            URL to Vercel<br>
+                                            <h6 class="badge badge-primary">New</h6>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">Roblox is
+                                            experiencing multiple servers crashes worldwide<br>
+                                            <h6 class="badge badge-primary">New</h6>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">A Short Journey into
+                                            Source Control Branching and Release Patterns<br>
+                                            <h6 class="badge badge-primary">New</h6>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">Using SQL with Delta
+                                            Lake [Create: Data]<br>
+                                            <h6 class="badge badge-primary">New</h6>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

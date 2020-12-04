@@ -6,24 +6,41 @@ main {
         border-radius: 50%;
     }
 
-    .links-articles.color2 {
-        background-color: green;
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: "Open Sans", sans-serif;
     }
+
+
+
+
 }
 
+.size-p-avatar {
 
+    width: 90px;
 
+}
 
-.nav-link {
-    background-color: none;
+.images-size-articles {
+    height: 15px;
+    width: 15px;
+    ;
+}
 
-    &:hover {
-        background-color: #9eacfd;
-        text-decoration: underline #3b49df;
+.font-size-hash {
+    font-style: light;
+    color: #757474;
+    font-size: 13px;
+
+    a {
+        margin-left: 8px;
     }
 
+}
 
-
-
-
+.main-body-card {
+    margin: 0 50px 0 50px;
+    padding-top: ;
 }
