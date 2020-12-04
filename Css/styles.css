@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   font-family: 'Open Sans', sans-serif;
 }
@@ -30,5 +31,31 @@ main .nav-link:hover {
   background-color: #9eacfd;
   -webkit-text-decoration: underline #3b49df;
           text-decoration: underline #3b49df;
+=======
+.card-img {
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.custom-title {
+  /* font-style: bold; */
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.card-title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.custom-card-text {
+  font-size: 10px;
+}
+
+.table .small {
+  color: grey;
+>>>>>>> master
 }
 /*# sourceMappingURL=styles.css.map */
