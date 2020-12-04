@@ -96,4 +96,44 @@
 hr {
   width: 20%;
 }
+
+.dev-img {
+  border: 1px solid black;
+  border-radius: 1px;
+  background: black;
+  color: white;
+  padding: 0 1% 0 1%;
+  font-size: 20px;
+}
+
+.prof-nav {
+  border-radius: 50%;
+  width: 15%;
+  height: 15%;
+}
+
+.barra {
+  width: 50vw;
+}
+
+.boton {
+  border: 1px solid blue;
+  border-radius: 1px;
+  background: blue;
+  color: white;
+  padding: 0 8% 0 8%;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 550px) {
+  .barra {
+    width: 35vw;
+  }
+  .nav-segundo {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
