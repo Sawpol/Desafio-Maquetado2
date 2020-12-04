@@ -1,38 +1,83 @@
 main {
+    .nav-bar-cambios {
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 12px;
+
+            &:hover {
+                text-decoration: none;
+                border-bottom: 3px solid #3b49df;
+                color: #3b49df;
+                background: rgba(238, 235, 235, 0.932);
+            }
+        }
+
+
+    }
+
+
+
+
     .avatar {
         vertical-align: middle;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
+        margin: 10px;
     }
 
-    a {
+
+}
+
+.nav-bar-cambios {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #171718;
+    font-style: bold;
+
+
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+
+    &:hover {
         text-decoration: none;
-        color: black;
-        font-family: "Open Sans", sans-serif;
     }
+}
 
 
 
+.size-avatar {
+
+    width: 50;
 
 }
 
 .size-p-avatar {
+    margin-top: 20px;
 
-    width: 90px;
+    width: 88px;
 
 }
 
 .images-size-articles {
-    height: 15px;
-    width: 15px;
-    ;
+    font-size: 12px;
+    margin-left: -11px;
 }
+
+
 
 .font-size-hash {
     font-style: light;
     color: #757474;
     font-size: 13px;
+    margin-top: 10px;
+    margin-left: -3px;
 
     a {
         margin-left: 8px;
@@ -41,5 +86,27 @@ main {
 }
 
 .main-body-card {
-    margin: 0 50px 0 50px;
+    margin: -30px 10px 0 50px;
+}
+
+.save-text-font {
+    font-size: 14px;
+
+    p {
+        margin-top: 12px;
+        margin-right: 15px;
+    }
+}
+
+.btn-secondary.save-button {
+    color: rgb(110, 110, 110);
+    background-color: #d2d6db;
+    border: none;
+}
+
+
+.ultimo-card-footer {
+    height: 50px;
+    background-color: #eef0f1;
+
 }

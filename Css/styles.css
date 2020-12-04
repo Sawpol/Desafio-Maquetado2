@@ -1,38 +1,122 @@
 * {
-<<<<<<< HEAD
   font-family: 'Open Sans', sans-serif;
 }
 
 body {
   background-color: #eef0f1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* margin: 0 0 0 0;
+    padding: 0 0 0 0; 
+    list-style-type:none; */
+  font-family: DM Sans;
+}
+
+.fuente a {
+  color: black;
+  text-decoration: none;
+}
+
+.fuente a:hover {
+  text-decoration: none;
+  color: blue;
+  background: rgba(238, 235, 235, 0.932);
+}
+
+.fsize-ch li {
+  font-size: 85%;
+  color: gray;
+  margin: 0 0 0 20%;
+}
+
+.profile-name .profile-img {
+  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+}
+
+.img-sticker {
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+}
+
+.sticker-title {
+  font-size: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: blue;
+}
+
+.sticker-title a {
+  text-align: center;
+  font-weight: bold;
+  color: blue;
+}
+
+.sticker-title a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+main .nav-bar-cambios a {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+main .nav-bar-cambios a:hover {
+  text-decoration: none;
+  border-bottom: 3px solid #3b49df;
+  color: #3b49df;
+  background: rgba(238, 235, 235, 0.932);
 }
 
 main .avatar {
   vertical-align: middle;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  margin: 10px;
 }
 
-main a {
+.nav-bar-cambios {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #171718;
+  font-style: bold;
+}
+
+a {
   text-decoration: none;
   color: black;
   font-family: "Open Sans", sans-serif;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+.size-avatar {
+  width: 50;
+}
+
 .size-p-avatar {
-  width: 90px;
+  margin-top: 20px;
+  width: 88px;
 }
 
 .images-size-articles {
-  height: 15px;
-  width: 15px;
+  font-size: 12px;
+  margin-left: -11px;
 }
 
 .font-size-hash {
   font-style: light;
   color: #757474;
   font-size: 13px;
+  margin-top: 10px;
+  margin-left: -3px;
 }
 
 .font-size-hash a {
@@ -40,12 +124,27 @@ main a {
 }
 
 .main-body-card {
-  margin: 0 50px 0 50px;
-  padding-top: 5px;
-=======
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
->>>>>>> 8f6e8e2be294fae0f1bd4af871542806442ecbb4
+  margin: -30px 10px 0 50px;
+}
+
+.save-text-font {
+  font-size: 14px;
+}
+
+.save-text-font p {
+  margin-top: 12px;
+  margin-right: 15px;
+}
+
+.btn-secondary.save-button {
+  color: #6e6e6e;
+  background-color: #d2d6db;
+  border: none;
+}
+
+.ultimo-card-footer {
+  height: 50px;
+  background-color: #eef0f1;
 }
 
 .card-img {
