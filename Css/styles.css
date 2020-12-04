@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .card-img {
   width: 100%;
   padding-top: 10px;
@@ -22,5 +27,22 @@
 
 .table .small {
   color: grey;
+}
+
+.custom-container-footer {
+  border: 0px solid blue;
+  background-color: #d2d6db;
+}
+
+.crayons-footer__mascot {
+  position: absolute;
+  right: 1.25rem;
+  top: -2;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+}
+
+hr {
+  width: 20%;
 }
 /*# sourceMappingURL=styles.css.map */
