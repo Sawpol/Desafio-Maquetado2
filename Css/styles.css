@@ -1,0 +1,34 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #eef0f1;
+}
+
+main .links-articlesa {
+  text-decoration: none;
+  color: #08090a;
+}
+
+main .links-articles .avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+main .links-articles article.color2 {
+  background-color: green;
+}
+
+main .nav-link {
+  background-color: none;
+}
+
+main .nav-link:hover {
+  background-color: #9eacfd;
+  -webkit-text-decoration: underline #3b49df;
+          text-decoration: underline #3b49df;
+}
+/*# sourceMappingURL=styles.css.map */

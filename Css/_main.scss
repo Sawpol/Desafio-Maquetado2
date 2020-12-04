@@ -1,0 +1,33 @@
+main {
+    .avatar {
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .links-articles.color2 {
+        background-color: green;
+    }
+}
+
+
+
+
+.nav-link {
+    background-color: none;
+
+    &:hover {
+        background-color: #9eacfd;
+        text-decoration: underline #3b49df;
+    }
+
+
+
+
+
+}
+
+
+
+}
