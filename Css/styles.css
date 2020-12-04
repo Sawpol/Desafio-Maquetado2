@@ -247,12 +247,17 @@ hr {
 
 .boton {
   border: 1px solid blue;
-  border-radius: 1px;
+  border-radius: 5px;
   background: blue;
   color: white;
   padding: 0 8% 0 8%;
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
+}
+
+.boton:hover {
+  color: white;
+  background: #1a06d2;
 }
 
 @media (max-width: 550px) {
