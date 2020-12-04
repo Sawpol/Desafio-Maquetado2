@@ -80,6 +80,41 @@
   color: grey;
 }
 
+/* ASIDE-2 del POST */
+.custom-card-header {
+  background-color: black;
+  height: 10px;
+}
+
+.custom-card-header-2 {
+  background-color: white;
+  height: 10px;
+  border: 0px;
+}
+
+.btn-primary {
+  background-color: #3b49df;
+  border: 0px;
+  width: 100%;
+}
+
+.card-body h5 {
+  /* padding-top: 10px; */
+}
+
+.custom-pic {
+  width: 50px;
+  border-radius: 80%;
+  position: absolute;
+  left: 1.25rem;
+  top: 10px;
+}
+
+.custom-card-header-2 h4 {
+  position: absolute;
+  left: 5rem;
+}
+
 .custom-container-footer {
   border: 0px solid blue;
   background-color: #d2d6db;
