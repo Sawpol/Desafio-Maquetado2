@@ -102,10 +102,6 @@ a:hover {
   text-decoration: none;
 }
 
-.size-avatar {
-  width: 50;
-}
-
 .size-p-avatar {
   margin-top: 20px;
   width: 88px;
@@ -133,7 +129,7 @@ a:hover {
 }
 
 .save-text-font {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .save-text-font p {
@@ -148,7 +144,7 @@ a:hover {
 }
 
 .ultimo-card-footer {
-  height: 50px;
+  height: 20px;
   background-color: #eef0f1;
 }
 
@@ -271,8 +267,32 @@ hr {
   }
 }
 
+<<<<<<< HEAD
 .as2 ul .as3 {
   text-decoration: none;
   list-style: none;
+=======
+.card-body .main-text {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.size-avatar-post
+img {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.hash-article p {
+  margin: 0 10px 0 0;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.content-margin-align {
+  margin: 0 10px 0 0;
+>>>>>>> master
 }
 /*# sourceMappingURL=styles.css.map */
