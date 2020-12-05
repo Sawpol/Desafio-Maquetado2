@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAIQ,IAJJ,CACA,EAAE,CAGE,IAAI,CAAA;EACA,eAAe,EAAE,IAAI;EACrB,UAAU,EAAE,IAAI;CAOnB;;AAbT,AAQY,IARR,CACA,EAAE,CAGE,IAAI,AAIC,MAAM,CAAA;EACH,UAAU,EAAC,GAAG;EACd,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "asside1post.scss"
+    ],
+    "names": [],
+    "file": "asside1post.css"
+}
