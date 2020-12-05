@@ -267,11 +267,16 @@ hr {
   }
 }
 
-<<<<<<< HEAD
 .as2 ul .as3 {
   text-decoration: none;
   list-style: none;
-=======
+}
+
+.as2 ul .as3:hover {
+  background: red;
+  color: green;
+}
+
 .card-body .main-text {
   font-size: 40px;
   font-weight: bolder;
@@ -293,6 +298,5 @@ img {
 
 .content-margin-align {
   margin: 0 10px 0 0;
->>>>>>> master
 }
 /*# sourceMappingURL=styles.css.map */
