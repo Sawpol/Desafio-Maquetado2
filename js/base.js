@@ -45,7 +45,6 @@ requestAjax(
         tags: " demo1 demo2",
         mtr: 2
     }
-    console.log(dateCreated)
 )
 
 //---- PARA BORRAR USUARIOS
