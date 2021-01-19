@@ -1,0 +1,10 @@
+.as2 ul .as3 {
+  text-decoration: none;
+  list-style: none;
+}
+
+.as2 ul .as3:hover {
+  background: red;
+  color: green;
+}
+/*# sourceMappingURL=asside1post.css.map */
