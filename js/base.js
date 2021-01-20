@@ -29,16 +29,18 @@ const showResponse = (response) => {
     console.log(response)
 }
 
+/* `$(urlDB)/posts/.json`, */
+
 requestAjax(
     `https://reto-js-default-rtdb.firebaseio.com/posts/.json`,
-    /* `$(urlDB)/posts/.json`, */
     showResponse,
     'POST', {
         title: "titulo",
         organization: "CCA",
-        author: "Luis L",
+        author: "Juan de Dios",
         content: "Contenido lorem",
-        date: "mm-dd-yyyy",
+        dateCreated: moment().format('MMMM Do YYYY, h:mm:ss a'),
+        dateUpdated: moment().format('MMMM Do YYYY, h:mm:ss a'),
         urlPhoto: "https://loremflicker.com/320/240/person",
         tags: " demo1 demo2",
         mtr: 2
@@ -47,7 +49,7 @@ requestAjax(
 
 //---- PARA BORRAR USUARIOS
 /* requestAjax(
-    'https://koders1gpython-default-rtdb.firebaseio.com/charlyX/users/-MQoobndFzUzmgunAasm.json',
+    'https://reto-js-default-rtdb.firebaseio.com/posts.json',
     showResponse,
     'DELETE'
 ) */
