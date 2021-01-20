@@ -1,38 +1,71 @@
 console.log('<---- ... Cosole Ready TAG ---->')
 
-const urlDB = 'https://reto-js-default-rtdb.firebaseio.com'
+//requestAjax(
+//    `https://reto-js-default-rtdb.firebaseio.com/tag/.json`,
+//    showResponse,
+//    'POST', {
+//    tag: "JavaScript"
+//}
+//
 
-// function request all methods
-const requestAjax = (url, callback, method = 'GET', data = {}) => {
-    let xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState === 4 && this.status === 200) {
-            /* console.log(this.response) */
-            callback(JSON.parse(this.response))
-            return true
-        } else if (this.readyState === 4 && this.status === 404) {
-            console.error(JSON.parse(this.response))
-            return false
+const createTags = (data) => {
+    // create
+    fetch(`https://reto-js-default-rtdb.firebaseio.com/tags/.json`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    })
+        .then(response => {
+            return response.json()
+        })
+        .then(tag => {
+            console.log(tag)
+            location.pathname = '/'
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}
+
+//if (location.pathname === "/newtag.html") {
+// createTags()
+//}
+
+
+
+
+
+let send__tag = document.querySelector('#formulario')
+
+if (send__tag) {
+
+    send__tag.addEventListener('submit', function (event) {
+
+        event.preventDefault()
+
+        console.log(event.taget)
+
+
+        let tag = $('#post__tag').val()
+
+
+        if (tag) {
+            createTags({
+                tag: tag
+            })
+        } else {
+
+            $('#errorTag').removeClass('d-none')
+
         }
-    }
-    xhttp.open(method, url)
-    if (method === 'GET' || method === 'DELETE') {
-        xhttp.send()
-    } else {
-        // put, patch, post
-        xhttp.send(JSON.stringify(data))
-    }
-}
 
-// put y post
-const showResponse = (response) => {
-    console.log(response)
-}
 
-/* requestAjax(
-    `https://reto-js-default-rtdb.firebaseio.com/tags/.json`,
-    showResponse,
-    'POST', {
-        tag: "JavaScript"
-    }
-) */
+
+
+
+
+
+    })
+}
