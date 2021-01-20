@@ -1,3 +1,7 @@
+$('#edit-tags').on('click', function () {
+    window.location.pathname = '/newtag.html'
+})
+
 const showTaggs = (tags) => {
     let htmltags = ''
     for (const record in tags) {
