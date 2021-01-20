@@ -48,7 +48,7 @@ if (send__tag) {
         let organization = $('#org-post').val()
         let author = $('#author-post').val()
         let content = $('#content-post').val()
-        let date = $('#date-post').val()
+        let date = moment().format('MMMM Do YYYY, h:mm:ss a')
         let urlPhoto = $('#url-post').val()
         let tags = $('#tags-post').val()
         let mtr = $('#mtr-post').val()
@@ -65,10 +65,10 @@ if (send__tag) {
         //         }
 
         // console.log(dataNewPost)
-        
-        
-        if (title=== '' || organization=== '' || author=== '' || content=== '' || date=== '' || urlPhoto=== '' || tags=== '' || mtr=== '' ) {
-           $('#errorTag').removeClass('d-none')
+
+
+        if (title === '' || organization === '' || author === '' || content === '' || urlPhoto === '' || tags === '' || mtr === '') {
+            $('#errorTag').removeClass('d-none')
         } else {
             let dataNewPost = {
                 title: title,
@@ -83,6 +83,6 @@ if (send__tag) {
             console.log(dataNewPost)
             createPosts(dataNewPost)
         }
-      
+
     })
 }
