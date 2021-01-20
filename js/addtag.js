@@ -29,11 +29,10 @@ const showResponse = (response) => {
     console.log(response)
 }
 
-requestAjax(
+/* requestAjax(
     `https://reto-js-default-rtdb.firebaseio.com/tags/.json`,
-    /* `$(urlDB)/posts/.json`, */
     showResponse,
     'POST', {
         tag: "JavaScript"
     }
-)
+) */
