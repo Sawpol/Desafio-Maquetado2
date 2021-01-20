@@ -1,12 +1,12 @@
-const showTaggs =(tags)=>{
-    let htmltags =''
+const showTaggs = (tags) => {
+    let htmltags = ''
     for (const record in tags) {
-       const tag =`
+        const tag = `
        <a class="mb-2 d-flex" href="">
             <li>#${tags[record].tag}</li>
         </a>
        `
-        htmltags +=tag
+        htmltags += tag
     }
 
     $('#list_tags').html(htmltags)
@@ -14,9 +14,9 @@ const showTaggs =(tags)=>{
 
 
 
-fetchData('https://reto-js-default-rtdb.firebaseio.com/tags/.json','GET')
-.then(res=>{
-    showTaggs(res)
-})
+fetchData('https://reto-js-default-rtdb.firebaseio.com/tags/.json', 'GET')
+    .then(res => {
+        showTaggs(res)
+    })
 
 
