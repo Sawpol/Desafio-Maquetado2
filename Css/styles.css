@@ -109,7 +109,7 @@ a:hover {
 
 .images-size-articles {
   font-size: 12px;
-  margin-left: -30px;
+  margin-left: -13px;
 }
 
 .font-size-hash {
@@ -141,11 +141,6 @@ a:hover {
   color: #6e6e6e;
   background-color: #d2d6db;
   border: none;
-}
-
-.ultimo-card-footer {
-  height: 20px;
-  background-color: #eef0f1;
 }
 
 .card-img {
