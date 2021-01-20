@@ -21,6 +21,8 @@ const showTaggs =(tags)=>{
 fetchData('https://reto-js-default-rtdb.firebaseio.com/tags/.json','GET')
 .then(res=>{
     showTaggs(res)
+}).catch(error=>{
+    console.log(error)
 })
 
 
