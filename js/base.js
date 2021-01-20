@@ -54,13 +54,23 @@ const showResponse = (response) => {
     'DELETE'
 ) */
 
-const fetchData = (url,metod,data={})=>{
+const fetchData = (url,metod,data=false)=>{
     return new Promise((resolve, reject) => {
-        const params ={
-            method:metod,
-            body:JSON.stringify(data),
-            headers:{
-                'Content-Type': 'application/json'
+        let params;
+        if(data){
+            params = {    
+                method:metod,
+                body:JSON.stringify(data),
+                headers:{
+                    'Content-Type': 'application/json'
+                }
+            }
+        }else{
+            params ={
+                method:metod,
+                headers:{
+                    'Content-Type': 'application/json'
+                }
             }
         }
     
