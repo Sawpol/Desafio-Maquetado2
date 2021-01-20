@@ -1,6 +1,6 @@
-// leer posts de la base de datos 
-const urlDB = 'https://reto-js-default-rtdb.firebaseio.com/posts/.json'
-const readPosts = () => {
+// leer taggs de la base de datos 
+const urlDB = 'https://reto-js-default-rtdb.firebaseio.com/tags/.json'
+const readTags = () => {
     let options =  {
         method: 'GET'
     }

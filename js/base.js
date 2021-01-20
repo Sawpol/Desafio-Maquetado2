@@ -29,21 +29,21 @@ const showResponse = (response) => {
     console.log(response)
 }
 
-requestAjax(
-    `https://reto-js-default-rtdb.firebaseio.com/posts/.json`,
-    /* `$(urlDB)/posts/.json`, */
-    showResponse,
-    'POST', {
-        title: "titulo",
-        organization: "CCA",
-        author: "Luis L",
-        content: "Contenido lorem",
-        date: "mm-dd-yyyy",
-        urlPhoto: "https://loremflicker.com/320/240/person",
-        tags: " demo1 demo2",
-        mtr: 2
-    }
-)
+// requestAjax(
+//     `https://reto-js-default-rtdb.firebaseio.com/posts/.json`,
+//     /* `$(urlDB)/posts/.json`, */
+//     showResponse,
+//     'POST', {
+//         title: "titulo",
+//         organization: "CCA",
+//         author: "Luis L",
+//         content: "Contenido lorem",
+//         date: "mm-dd-yyyy",
+//         urlPhoto: "https://loremflicker.com/320/240/person",
+//         tags: " demo1 demo2",
+//         mtr: 2
+//     }
+// )
 
 //---- PARA BORRAR USUARIOS
 /* requestAjax(
