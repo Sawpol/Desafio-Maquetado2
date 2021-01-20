@@ -277,8 +277,7 @@ hr {
   font-weight: bolder;
 }
 
-.size-avatar-post
-img {
+.size-avatar-post img {
   vertical-align: middle;
   width: 40px;
   height: 40px;
@@ -293,5 +292,10 @@ img {
 
 .content-margin-align {
   margin: 0 10px 0 0;
+}
+
+.discussion {
+  font-size: 20px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=styles.css.map */
