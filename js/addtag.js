@@ -1,4 +1,4 @@
-console.log('<---- ... Cosole Ready ---->')
+console.log('<---- ... Cosole Ready TAG ---->')
 
 const urlDB = 'https://reto-js-default-rtdb.firebaseio.com'
 
@@ -29,25 +29,13 @@ const showResponse = (response) => {
     console.log(response)
 }
 
-requestAjax(
-    `https://reto-js-default-rtdb.firebaseio.com/posts/.json`,
-    /* `$(urlDB)/posts/.json`, */
+/* requestAjax(
+    `https://reto-js-default-rtdb.firebaseio.com/tags/.json`,
     showResponse,
     'POST', {
-        title: "titulo",
-        organization: "CCA",
-        author: "Luis L",
-        content: "Contenido lorem",
-        date: "mm-dd-yyyy",
-        urlPhoto: "https://loremflicker.com/320/240/person",
-        tags: " demo1 demo2",
-        mtr: 2
+        tag: "JavaScript"
     }
-)
-
-//---- PARA BORRAR USUARIOS
-/* requestAjax(
-    'https://koders1gpython-default-rtdb.firebaseio.com/charlyX/users/-MQoobndFzUzmgunAasm.json',
-    showResponse,
-    'DELETE'
 ) */
+
+
+
