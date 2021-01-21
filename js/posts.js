@@ -1,8 +1,18 @@
 const showListPosts = (posts)=>{
     let countpost=0
     let postsHtml =''
-    for (const postId in posts) {
+    let postsKeys =[]
+
+    for (const key in posts) {
+       postsKeys.push(key)
+    }
+
+    const reversed = postsKeys.reverse()
+    console.log('reversed')
+    console.log(reversed)
+    for (const postId of reversed) {
         const post = posts[postId]
+        console.log(post)
         postsHtml += `<div class="card mb-3 d-flex-row">
         <img class="card-img-top " src="${countpost ===0?post.urlPhoto:''}">
         <div class="d-flex align-items-center">
