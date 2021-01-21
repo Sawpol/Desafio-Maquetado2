@@ -1,10 +1,11 @@
 const showListPosts = (posts) => {
+    let countpost = 0
     let postsHtml = ''
     for (const postId in posts) {
 
         const post = posts[postId]
         postsHtml += `<div class="card mb-3 d-flex-row">
-        <img class="card-img-top " src="imagenes/aws.webp">
+        <img class="card-img-top " src="${countpost === 0 ? post.urlPhoto : ''}">
         <div class="d-flex align-items-center">
 
             <div class="size-avatar">
@@ -22,7 +23,6 @@ const showListPosts = (posts) => {
 
         <div>
             <div class="card-body main-body-card">
-
 
                 <a href="post-1.html?postId=${postId}">
                     <p class="card-text font-weight-bold h2">${post.title}
@@ -76,6 +76,7 @@ const showListPosts = (posts) => {
 
 
     </div>`
+        countpost += 1
     }
     $('#posts_list').html(postsHtml)
 }
