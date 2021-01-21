@@ -10,7 +10,7 @@ const showListPosts = (posts) => {
 
             <div class="size-avatar">
 
-            <img src=${post.urlPhoto} alt="avatar" class="avatar m-3">
+            <img src="imagenes/avatar.jpg" alt="avatar" class="avatar m-3">
             </div>
 
             <div class="size-p-avatar">
