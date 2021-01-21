@@ -24,7 +24,7 @@ const showListPosts = (posts) => {
             <div class="card-body main-body-card">
 
 
-                <a href="post-1.html">
+                <a href="post-1.html?postId=${postId}">
                     <p class="card-text font-weight-bold h2">${post.title}
                     </p>
                 </a>
