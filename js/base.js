@@ -5,21 +5,21 @@
     'DELETE'
 ) */
 
-const fetchData = (url,metod,data=false)=>{
+const fetchData = (url, metod, data = false) => {
     return new Promise((resolve, reject) => {
         let params;
-        if(data){
-            params = {    
-                method:metod,
-                body:JSON.stringify(data),
-                headers:{
+        if (data) {
+            params = {
+                method: metod,
+                body: JSON.stringify(data),
+                headers: {
                     'Content-Type': 'application/json'
                 }
             }
-        }else{
-            params ={
-                method:metod,
-                headers:{
+        } else {
+            params = {
+                method: metod,
+                headers: {
                     'Content-Type': 'application/json'
                 }
             }
