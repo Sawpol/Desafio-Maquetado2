@@ -1,6 +1,7 @@
-const showListPosts = (posts)=>{
-    let postsHtml =''
+const showListPosts = (posts) => {
+    let postsHtml = ''
     for (const postId in posts) {
+
         const post = posts[postId]
         postsHtml += `<div class="card mb-3 d-flex-row">
         <img class="card-img-top " src="imagenes/aws.webp">
@@ -8,13 +9,13 @@ const showListPosts = (posts)=>{
 
             <div class="size-avatar">
 
-                <img src="imagenes/avatar.jpg" alt="avatar" class="avatar m-3">
+            <img src=${post.urlPhoto} alt="avatar" class="avatar m-3">
             </div>
 
             <div class="size-p-avatar">
 
-                <p class="font-weight-light"> Muhimen <small class="text-muted">
-                        Dec 3 (7hours)</small></p>
+                <p class="font-weight-light">${post.author}<small class="text-muted">
+                        ${post.date}</small></p>
 
             </div>
         </div>
@@ -60,7 +61,7 @@ const showListPosts = (posts)=>{
 
                     <div class="d-flex align-items-center save-text-font">
                         <p class="card-text"><small
-                                class="text-muted save-text-font">3 mins
+                                class="text-muted save-text-font">${post.mtr}
                                 read</small>
                         </p>
                         <button type="button"
@@ -80,10 +81,10 @@ const showListPosts = (posts)=>{
 }
 
 fetchData('https://reto-js-default-rtdb.firebaseio.com/posts/.json', 'GET')
-.then(res=>{
-    showListPosts(res)
-})
-.catch(error=>{
-    console.log('Error al cargar lista de posts')
-    console.log(error)
-})
+    .then(res => {
+        showListPosts(res)
+    })
+    .catch(error => {
+        console.log('Error al cargar lista de posts')
+        console.log(error)
+    })
